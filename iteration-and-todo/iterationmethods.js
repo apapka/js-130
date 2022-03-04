@@ -37,3 +37,5 @@ console.log(map(values, value => String(value)));
 
 let arr = [1,2,3];
 console.log(...arr);
+
+function reduce(array, callback, startingValue)

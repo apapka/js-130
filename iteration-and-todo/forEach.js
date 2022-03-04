@@ -1,6 +1,6 @@
 function forEach(array, callback, thisArg) {
   for (let i = 0; i < array.length; i++) {
-    callback.call(thisArg, array[i]);
+    callback.call(thisArg, array[i], i, array);
   }
 }
 class Foo {
@@ -22,3 +22,5 @@ let foo = new Foo("Item: ");
 ['a','b','c'].forEach(function(value,index,arr) {
   console.log(`After ${value} comes ${arr[index + 1]}`)
 });
+
+forEach(['a','b','c'], )
