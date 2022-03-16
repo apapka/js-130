@@ -6,12 +6,18 @@ describe("The Car class", () => {
     car = new Car();
   });
   test("has four wheels", () => {
-    let car = new Car();
     expect(car.wheels).toBe(4);
   });
   test.skip("bad wheels", () => {
-    let car = new Car();
     expect(car.wheels).toBe(3);
   });
+  test("two newly created cars are object equa" , () => {
+    let car2 = new Car();
+    expect(car).toEqual(car2);
+  });
+  test("a newly created car does not have doors", () => {
+    expect(car.doors).toBeUndefined();
+  });
+  
 });
 

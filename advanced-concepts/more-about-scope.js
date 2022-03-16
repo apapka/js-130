@@ -27,6 +27,10 @@ within a function.
     // let, const, class have BLOCK SCOPE.
     // var, function have FUNCTION SCOPE.
 //lexical scope: INSIDE vs OUTSIDE a block or function.
+    //variables declared with VAR are always in outer scope unless within a function. 
+    //  var = function scope.
+    //variable at top level are always in outer scope. 
+    //variables within if block (declared with let) are in inner scope
 
 if(true) {
   let foo2 = 3;

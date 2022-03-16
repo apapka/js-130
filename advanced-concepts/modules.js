@@ -8,3 +8,4 @@ const readline = require('readline-sync');
 // console.log(module);
 console.log(__dirname);
 console.log(__filename);
+

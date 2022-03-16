@@ -8,5 +8,3 @@ Semantic changes when using strict mode:
   - Leading zeros on numeric integers are illegal.
  */ 
 
-console.log(a);
-let a  = 1;

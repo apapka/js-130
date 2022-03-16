@@ -117,7 +117,11 @@ describe('TodoList', () => {
     result = list.filter(todo => todo.isDone());
     expect((result instanceof TodoList)).toEqual(true);
     expect((result.toArray())).toEqual([todo1]);
-  })
+  }); 
+  test("getTitle returns a title", () => {
+    title = todo1.getTitle();
+    expect(title).toBe('Buy Milk');
+  });
 
   
 });

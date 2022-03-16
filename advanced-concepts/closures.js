@@ -44,3 +44,15 @@ add(1);
 add(42);
 subtract(39);
 add(6);
+
+function later(func, arg) {
+  return function() {
+    func(arg);
+  }
+}
+
+function later2(func, arg1) {
+  return function(arg2) {
+    func(arg1,arg2);
+  }
+}
